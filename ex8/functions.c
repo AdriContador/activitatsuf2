@@ -7,16 +7,20 @@
 
 int value(){
 	int num;
-	printf("Introdueix un nombre enter: ");
-	scanf("%d", &num);
-	return num;
+	do{
+		printf("Introdueix un nombre enter: ");
+		scanf("%d", &num);
+		return num;
+	}while(num<1);
 }
 
 int value2(){
 	int num;
+	do{
 	printf("Introdueix el nombre enter al que el vols elevar: ");
 	scanf("%d", &num);
 	return num;
+	}while(num<1);
 }
 
 void elevate(num1, num2){
